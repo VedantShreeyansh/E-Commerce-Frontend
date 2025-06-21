@@ -52,6 +52,8 @@ Component Screenshots:
 Video Demo: Complete application demonstration showing the full user journey from registration to checkout
 Visual assets and demonstration videos are included in the repository to provide a complete overview of the application's capabilities and user experience.
 
+https://raw.githubusercontent.com/VedantShreeyansh/E-Commerce-Frontend/refs/heads/main/src/assets/Demo.mp4 (Just click on it will get downloaded automatically and watch)
+
 
 
 🎯 User Journey
