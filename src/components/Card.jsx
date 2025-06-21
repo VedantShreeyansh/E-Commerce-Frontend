@@ -26,15 +26,15 @@ const Card = ({ productObj }) => {
         </Link>
         <div className="p-4">
           <Link to={`/product/${id}`}>
-          <h2 className="text-lg font-semibold text-gray-800">{title}</h2>
+          <h2 className="text-lg font-semibold text-gray-800 leading-tight h-12 truncate">{title}</h2>
           </Link>
-          <p className="mt-1 text-sm text-gray-600">
-            <span className="bg-blue-100 text-blue-800 px-2 py-1 rounded-full text-xs">
+          <p className="mt-1 text-sm text-gray-600 leading-snug h-6">
+            <span className="bg-blue-100 text-blue-800 px-2 py-1 rounded-full text-xs leading-none">
               {category}
             </span>
           </p>
-          <p className="mt-2 text-sm text-gray-700">Rating: {rating} ⭐</p>
-          <p className="mt-2 text-xl font-bold text-gray-900">${price}</p>
+          <p className="mt-2 text-sm text-gray-700 leading-snug h-6">Rating: {rating} ⭐</p>
+          <p className="mt-2 text-xl font-bold text-gray-90 leading-tight h-8">${price}</p>
 
           {/* Increment and decrement buttons */}
           {productInCart ? (

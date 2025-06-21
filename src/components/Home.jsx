@@ -65,6 +65,7 @@ const Home = () => {
         </button>
       </div>
 
+    <div className="bg-transparent">
       <div className="flex justify-center mb-4">
         <select
           value={selectedCategory}
@@ -112,6 +113,7 @@ const Home = () => {
           <p className="text-lg">Try searching for something else</p>
         </div>
       )}
+      </div>
     </>
   );
 };

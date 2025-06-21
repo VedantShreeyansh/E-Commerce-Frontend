@@ -40,20 +40,20 @@ const Cart = () => {
                 <img
                   src={item.thumbnail}
                   alt={item.title}
-                  className="w-16 h-16 object-cover rounded"
+                  className="w-16 h-16 object-cover rounded flex-shrink-0"
                 />
-                <div>
+                <div className="flex-1 min-w-0 ml-4">
                   <h3 className="text-lg font-semibold">{item.title}</h3>
                   <p className="text-gray-700">${item.price}</p>
                 </div>
-                <div className="flex items-center space-x-2">
+                <div className="flex items-center space-x-2 w-32 justify-center">
                   <button
                     onClick={() => dispatch(decreaseQuantity(item))}
                     className="px-3 py-2 bg-gray-200 rounded-lg"
                   >
                     -
                   </button>
-                  <span>{item.quantity}</span>
+                  <span class="w-6 text-center">{item.quantity}</span>
                   <button
                     onClick={() => dispatch(increaseQuantity(item))}
                     className="px-3 py-2 bg-gray-200 rounded-lg"
@@ -61,7 +61,7 @@ const Cart = () => {
                     +
                   </button>
                 </div>
-                <p className="text-xl font-bold text-gray-700">
+                <p className="text-xl font-bold text-gray-700 w-24 text-right">
                   ${(item.price * item.quantity).toFixed(2)}
                 </p>
               </div>
